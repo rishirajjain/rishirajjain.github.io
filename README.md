@@ -26,4 +26,3 @@ You can suggest ideas report bugs on Github issue tracker.
 
 
 
-*Note : This site is under development.
