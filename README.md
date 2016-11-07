@@ -9,13 +9,6 @@ For more [About unusual stamps](http://unusual-stamps.blogspot.com/)
  
  Currently only the front end is implemented using bootstrap3.
  
-
-# Help needed with angularJS backend implementation
- 
-The backend of this site is to be implemented using angular JS and Javascript.
-
-
-
 # Contributing 
 
 It would be great if you can help us in our endeavour by your valuable contributions
