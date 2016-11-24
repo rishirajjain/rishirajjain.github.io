@@ -234,6 +234,9 @@ th {
     orphans: 3;
     widows: 3;
   }
+  h2
+  {display:none;
+  }
   h2,
   h3 {
     page-break-after: avoid;
