@@ -11,16 +11,32 @@
 
 
 	<title>UStamps</title>
-<!--
-Snapshot Template
-http://www.templatemo.com/tm-493-snapshot
-
-Zoom Slider
-https://vegas.jaysalvat.com/
-
-Caption Hover Effects
-http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
--->    
+ 
+  /* Preloader CSS code */
+   
+<style>
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(images/loader-128x/Preloader_2.gif) center no-repeat #fff;
+}
+</style>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+  
+    $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+</script>
+ 
 
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -43,10 +59,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 
 <!-- Preloader section -->
-
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-pulse"></div>
-</div>
+<div class="se-pre-con"></div>
 
 
 <!-- Navigation section  -->
