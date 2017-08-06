@@ -1,307 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
 
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
 
-	<title>UStamps</title>
-<!-- Preloader CSS code-->   
-<style>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(images/loader-128x/Preloader_2.gif) center no-repeat #fff;
-}
-</style>
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script>
-  
-    $(window).load(function() {
-    // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
-  });
-</script>
- 
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/component.css">
-	
-  <link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/vegas.min.css">
-	<link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/ownstyle.css">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
 
-	<!-- Google web font  -->
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
-</head>
-<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
 
 
-<!-- Preloader section -->
-<div class="se-pre-con"></div>
+    <!-- Material Design icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+
+  <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+     <div class="mdl-layout__drawer">
+       <span class="mdl-layout-title">Menu</span>
+       <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#home">Home</a>
+          <a class="mdl-navigation__link" href="#bio">Bio</a>
+          <a class="mdl-navigation__link" href="#resume">Resume</a>
+          <a class="mdl-navigation__link" href="#cont">Contact</a>
+       </nav>
+  </div>
+  <main class="mdl-layout__content ">
+     <header class=" mdl-layout__header--waterfall">
+          <!-- Top row, always visible -->
+        <div class="mdl-layout__header-row mdl-color--cyan-700">
+            <!-- Title -->
+             <a class="mdl-layout-title mdl-color-text--accent-contrast mdl-navigation__link mdl-typography--display-4" href="#">TraCoPh</a>
+        <div class="mdl-layout-spacer"></div>
+           <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+              <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+                <i class="material-icons">search</i>
+              </label>
+              <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" name="sample"
+                       id="waterfall-exp">
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="page-content">
+         </div>
+            <div class="mdl-grid">
+              <div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-shadow--4dp">
+                <div class="mdl-card mdl-card--border mdl-shadow--1dp">
+                  <div class="mdl-card__title">
+                    <h3 class="mdl-color-text--accent">Welcome!</h3>
+                    </div>
+                  <div class="mdl-card__supporting-text">
+                      <p>This is my personal website.</p>
+               </div>
+             </div>
+          </div>
 
 
-<!-- Navigation section  -->
 
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
 
-      <div class="navbar-header">
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-        </button>
-        <a href="#top" class="navbar-brand smoothScroll">Unusual stamps</a>
-      </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#top" class="smoothScroll"><span>Home</span></a></li>
-            <li><a href="#about" class="smoothScroll"><span>About</span></a></li>
-            <li><a href="#gallery" class="smoothScroll"><span>Gallery</span></a></li>
-            <li><a href="#contact" class="smoothScroll"><span>Contact</span></a></li>
-            <li><button type="submit" class="waves-effect waves-light btn-large" onclick="window.location.href='/login.html'" >Login</li>
-          </ul>
-       </div>
 
-    </div>
+
+
+
+        </div>
+      </main>
   </div>
 
 
-<!-- Home section -->
-
-<section id="home">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Odd looking stamps</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.9s">These are some of the most wierdest and unique stamps on the planet!</p>
-        <a href="#about" class="smoothScroll  btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Learn more</a>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
-<!-- About section -->
-
-<section id="about">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
-        <div class="card-panel hoverable about-thumb">
-          <h1>About us</h1>
-          <p>We showcase some of the rarest and most beautiful stamps from all over the world. 
-            </p>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
-        <img src="images/ganu.jpg" class="img-responsive img-circle" alt="About">
-      </div>
-
-      <div class="clearfix"></div>
-
-      <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="section-title text-center">
-          <h1>Unusual Team</h1>
-          <h3>we are open source!</h3>
-        </div>
-      </div>
-
-      <!-- team carousel -->
-      <div id="team-carousel" class="owl-carousel">
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/rishi.jpg" class="img-responsive img-circle" alt="Mary">
-          </div>
-          <h2 class="heading">Rishi , Techie</h2>
-          <p class="description">I design and maintain this site :)</p>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/person.jpg" class="img-responsive img-circle" alt="Jack">
-          </div>
-          <h2 class="heading">Atish, Founder</h2>
-          <p class="description">I'm a philatelist with unusual tastes in stamps!</p>
-        </div>
-      </div>     
-
-      </div>
-      <!-- end team carousel -->
-
-    </div>
-  </div>
-</section>
 
 
-<!-- Gallery section -->
-
-<section id="gallery">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="section-title">
-          <h1>Gallery</h1>
-          <p>Pictures of stamps coming soon..</p>
-        </div>
-      </div>
-
-      <ul class="grid cs-style-4">
-        <li class="col-md-6 col-sm-6">
-          <figure>
-            <div><img src="images/gallery-img1.jpg" alt="image 1"></div>
-            <figcaption>
-              <h1>Test Photo1</h1>
-              <small>just a testing photo</small>
-              <a href="#">Read More</a>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li class="col-md-6 col-sm-6">
-          <figure>
-            <div><img src="images/gallery-img2.jpg" alt="image 2"></div>
-            <figcaption>
-              <h1>Test Photo2</h1>
-              <small>AS the name suggests</small>
-              <a href="#">Details</a>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li class="col-md-6 col-sm-6">
-          <figure>
-            <div><img src="images/gallery-img3.jpg" alt="image 3"></div>
-            <figcaption>
-              <h1>Test Photo3</h1>
-              <small>just testing out pics</small>
-              <a href="#">Learn More</a>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li class="col-md-6 col-sm-6">
-          <figure>
-            <div><img src="images/gallery-img4.jpg" alt="image 4"></div>
-            <figcaption>
-              <h1>Test Photo4</h1>
-              <small>Testing description</small>
-              <a href="#">Full Post</a>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</section>
 
 
-<!-- Contact section -->
-
-<section id="contact">
-  <div class="container">
-    <div class="row">
-
-       <div class="col-md-offset-1 col-md-10 col-sm-12">
-
-        <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
-          <h1>Send a message</h1>
-          <p>We'd Love to hear from you!</p>
-        </div>
-
-        <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
-          <div class="col-md-6 col-sm-6">
-            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <input name="email" type="email" class="form-control" id="email" placeholder="Email">
-          </div>
-          <div class="col-md-12 col-sm-12">
-            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-          </div>
-          <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-            <input type="submit" class="form-control" value="SEND MESSAGE">
-          </div>
-        </form>
-
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
-<!-- Footer section -->
 
-<footer>
-	<div class="container">
-    
-		<div class="row">
-
-			<div class="col-md-12 col-sm-12">
-            
-                <ul class="social-icon"> 
-                    <li><a href="http://www.facebook.com/arihantstamps/" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
-                    <li><a href="https://www.instagram.com/arihantstamps_/" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.8s"></a></li>
-                    <li><a href="https://github.com/rishirajjain/rishirajjain.github.io" class="fa fa-github wow fadeInUp" data-wow-delay="1.0s"></a></li>
-                </ul>
-
-				<p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2017 Unusual Stamps</p>
-                
-			</div>
-			
-		</div>
-        
-	</div>
-</footer>
-
-<!-- Back top -->
-<a href="#top" class="go-top"><i class="fa fa-angle-up"></i></a>
-
-<!-- Javascript  -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/vegas.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/toucheffects.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
-
-</body>
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- Built with love using Web Starter Kit -->
+  </body>
 </html>
