@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>TraCoPh</title>
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
@@ -39,8 +39,9 @@
 
     <!-- Material Design icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    <link rel="stylesheet" href="{{ site.baseurl}}/styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-cyan.min.css" />
+
   </head>
   <body>
 
@@ -57,9 +58,9 @@
   <main class="mdl-layout__content ">
      <header class=" mdl-layout__header--waterfall">
           <!-- Top row, always visible -->
-        <div class="mdl-layout__header-row mdl-color--cyan-700">
+        <div class="mdl-layout__header-row mdl-color--indigo-600">
             <!-- Title -->
-             <a class="mdl-layout-title mdl-color-text--accent-contrast mdl-navigation__link mdl-typography--display-4" href="#">TraCoPh</a>
+             <a class="mdl-layout-title  mdl-navigation__link mdl-typography--display-4" href="#">TraCoPh</a>
         <div class="mdl-layout-spacer"></div>
            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
               <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
@@ -106,9 +107,22 @@
 
 
 
-
+    <!--Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCGHu0Ok9efZ0jAozoMfdosavNjQ4wemnc",
+      authDomain: "tracoph.firebaseapp.com",
+      databaseURL: "https://tracoph.firebaseio.com",
+      projectId: "tracoph",
+      storageBucket: "",
+      messagingSenderId: "765020742396"
+    };
+    firebase.initializeApp(config);
+  </script>
     <!-- build:js scripts/main.min.js -->
-    <script src="{{ site.baseurl}}/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
     <!-- endbuild -->
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
