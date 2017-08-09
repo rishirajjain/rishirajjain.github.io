@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "TCP",
+  "launch_path": "/index.html",
+  "description": "Blogs on Travel,Code& Photography",
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"
+  },
+  "developer": {
+    "name": "Rishi Raj Jain",
+    "url": "https://www.github.com/rishirajjain"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "TraCoPh",
+      "description": "Travel,Code& Photography "
+    }
+  }
+}
