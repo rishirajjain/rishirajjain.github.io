@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "TCP",
+  "name": "Tracoph",
   "launch_path": "/index.html",
   "description": "Blogs on Travel,Code& Photography",
   "icons": {
@@ -19,7 +19,6 @@
   "locales": {
     "en": {
       "name": "TraCoPh",
-      "description": "Travel,Code& Photography "
-    }
+      "description": "Travel,Code,Photography "    }
   }
 }
