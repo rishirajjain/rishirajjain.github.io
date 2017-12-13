@@ -1,0 +1,28 @@
+[
+
+
+{
+	"event":"Event1",
+	"image":"images/banner.jpg"
+},
+
+{	
+  "event":"Event2", 	
+  "image":"images/banner2.jpg"
+},
+{
+	"event":"Event3",
+    "image":"images/banner3.jpg"
+},
+{
+    "event":"Event4",
+    "image":"images/banner4.jpg"
+},
+  
+{
+ 	"event":"Event5",
+    "image":"images/banner5.jpg"
+}
+
+
+]
