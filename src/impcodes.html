@@ -1,1 +1,0 @@
-<html><head><template is="dom-repeat" items="[[hdata]]"><div class="card">[[item.event]]<div>[[item.details]]</div></div></template></head><body><iron-ajax auto="" url="/data/about.json" handle-as="json" last-response="{{abt}}"></iron-ajax><template is="dom-repeat" items="[[abt]]"><div class="card">[[item.title]]<div>[[item.details]]</div></div></template></body></html>
