@@ -1,0 +1,53 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="t-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+        
+     }
+
+      .name{
+        margin-top: 150px;
+        text-align: center;
+        color:teal;
+        font-family:Courier New;
+      }
+    </style>
+    
+  
+
+
+
+
+    
+    <h1 class="name">[[prop1]]</h1>
+    
+  
+
+
+
+
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class TApp extends Polymer.Element {
+      static get is() { return 't-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'Rishi Raj Jain'
+          }
+        };
+      }
+    }
+    
+    window.customElements.define(TApp.is, TApp);
+  </script>
+</dom-module>
