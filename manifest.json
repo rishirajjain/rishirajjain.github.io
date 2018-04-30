@@ -1,0 +1,7 @@
+{
+  "name": "tracoph",
+  "short_name": "tracoph",
+  "description": "personal page",
+  "start_url": "/",
+  "display": "standalone"
+}
