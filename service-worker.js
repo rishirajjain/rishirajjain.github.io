@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["bower_components/webcomponentsjs/webcomponents-loader.js","f7eb9862b1725aef7e59f8584c2a2efb"],["images/favicon.ico","6bfb5ae29d8efcd0fc1c8a3fa33a17b9"],["images/git.svg","1bb027109345a90a9eab1e929d8669c2"],["images/instagram.svg","341a67c538d67f9ce92005cf14255dc2"],["images/linkedin.svg","97ce31c8546f65bd1e25afbbf86ec1de"],["index.html","6ee3928fa8c7dacbd16b965127c4d733"],["manifest.json","ca4927891dd750c6ac609ff5c33ae41b"],["src/t-app/t-app.html","4eb3619a0166df60ec00d1efed0fd2ba"]];
+var precacheConfig = [["bower_components/webcomponentsjs/webcomponents-loader.js","f7eb9862b1725aef7e59f8584c2a2efb"],["images/favicon.ico","6bfb5ae29d8efcd0fc1c8a3fa33a17b9"],["images/git.svg","1bb027109345a90a9eab1e929d8669c2"],["images/instagram.svg","341a67c538d67f9ce92005cf14255dc2"],["images/linkedin.svg","97ce31c8546f65bd1e25afbbf86ec1de"],["images/rishi.png","ebd6146dd71efb9d35d518547c7a14e6"],["index.html","6ee3928fa8c7dacbd16b965127c4d733"],["manifest.json","ca4927891dd750c6ac609ff5c33ae41b"],["src/t-app/t-app.html","b10483dcd3c980c3ef2c7161251b654f"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
