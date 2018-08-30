@@ -3,12 +3,10 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="41 -24.8 97.8 97.8" style="enable-background:new 41 -24.8 97.8 97.8;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#007BB6;}
+	.st0{fill:#3B579D;}
 	.st1{fill:#FFFFFF;}
 </style>
 <circle class="st0" cx="89.9" cy="24.1" r="48.9"/>
-<rect x="57.8" y="13" class="st1" width="13.7" height="44.2"/>
-<path class="st1" d="M64.7,7c-4.4,0-8-3.6-8-8c0-4.4,3.6-8,8-8c4.4,0,8,3.6,8,8C72.7,3.4,69.1,7,64.7,7z"/>
-<path class="st1" d="M123,57.2h-13.7V35.7c0-5.1-0.1-11.7-7.1-11.7c-7.1,0-8.2,5.6-8.2,11.4v21.9H80.2V13h13.2v6h0.2
-	c1.8-3.5,6.3-7.1,13-7.1c13.9,0,16.5,9.2,16.5,21.1C123,33,123,57.2,123,57.2z"/>
+<path class="st1" d="M108.5,0.1l-6.8,0c-5.3,0-6.3,2.5-6.3,6.2v8.1h12.6l0,12.8H95.4V60H82.3V27.3h-11V14.5h11V5.1
+	c0-10.9,6.7-16.9,16.4-16.9l9.9,0L108.5,0.1L108.5,0.1z"/>
 </svg>
