@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["bower_components/webcomponentsjs/webcomponents-loader.js","f7eb9862b1725aef7e59f8584c2a2efb"],["images/bg.jpg","5cf36ce67bea008d8058a4de6eae52b4"],["images/email.svg","20839e0c290514968d4eeca26a823ed3"],["images/facebook.svg","9161aa61b8e8ad218c68ee3216d92cbb"],["images/favicon.ico","6bfb5ae29d8efcd0fc1c8a3fa33a17b9"],["images/git.svg","ce89173e3842fb91835a9cc8605a5ecc"],["images/instagram.svg","9f41e00c05ab5419f570b33a1d8766ef"],["images/linkedin.svg","14f532a3e2d4b8e242ec7d6b66a5c9fa"],["images/respbg.jpg","3a90d94f88cb5634d94eb661be09998e"],["images/rishi.png","992cdc6d06c6556a2f382a81b8533b04"],["images/twitter.svg","2881f962e9910b39966753a6c98b804b"],["index.html","06342ab3ea6e65532596fc1646dc6925"],["manifest.json","74c327d91de24343301ef3a1bfed2e2d"],["src/t-app/t-app.html","2c66a9f4eb83f64f11bc978afb5b3aba"]];
+var precacheConfig = [["data/images.json","d41d8cd98f00b204e9800998ecf8427e"],["data/quotes.json","a1d39477361fe9abd8db1b3f01562471"],["images/favicon.ico","6bfb5ae29d8efcd0fc1c8a3fa33a17b9"],["images/icons/dwn.svg","cd8f65ca27da756b7688708c5b673a1b"],["images/icons/email.svg","2c0cb8992718615805bce6e78d19335f"],["images/icons/facebook.svg","b7623b21917cef48e6e9504d11abbe4f"],["images/icons/git.svg","c144a75ec2efc16046810ac7d96f890c"],["images/icons/instagram.svg","2d33e8c04e8cd3c1b28291189d086a78"],["images/icons/linkedin.svg","6fed826d60184da7c6685a1f52f7325b"],["images/icons/twitter.svg","8d3612d72a8a6d5a5b39dca2e94ddbf8"],["images/manifest/144x144.png","841549ad5c3529d2f0e3b5ce05421b76"],["images/manifest/192x192.png","b89c370905d2e65cfd73466dbcb2b9b9"],["images/manifest/48x48.png","b50c8c4fbadb1e9f350b0dc688d8a1df"],["images/manifest/512x512.png","f0fa27296251a2095f24b4fa5763f3af"],["images/manifest/72x72.png","323121d793929212b5145c4541b4165a"],["images/manifest/96x96.png","fd1b5bf3699a50e803b69f509b38614c"],["images/rishi.png","992cdc6d06c6556a2f382a81b8533b04"],["index.html","175046d444e26a083157f81c28328d22"],["manifest.json","9ab501c9bc0f7fc12ee85de30ccf7eeb"],["node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js","ba9bab8c93719b2338f3be99d38a4857"],["src/tr-app/tr-about.js","2e22269d536a327d9f4954e49a0185aa"],["src/tr-app/tr-app.js","b3c781648c75b6e5f2bd404c54bf99de"],["src/tr-app/tr-quotes.js","4a989936a92536a46875fe2436797c9a"],["src/tr-app/tr-tracoph.js","2c533e2d2179639933c44ec7c675ac5a"],["src/tr-app/tr-v404.js","faa880e20d588ebfa508d83421d1bce7"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
@@ -285,7 +285,7 @@ self.addEventListener('fetch', function (event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/\/bower_components\/webcomponentsjs\/.*.js/, toolbox.fastest, {"cache":{"name":"webcomponentsjs-polyfills-cache"}});
+toolbox.router.get(/\/@webcomponents\/webcomponentsjs\//, toolbox.fastest, {});
 
 
 

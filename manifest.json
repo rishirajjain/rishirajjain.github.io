@@ -1,7 +1,7 @@
 {
-  "name": "Rishi",
-  "short_name": "Rishi",
-  "description": "Personal Portfolio",
+  "name": "tracoph",
+  "short_name": "tracoph",
+  "description": "Portfolio",
   "icons": [
     {
       "src": "images/manifest/192x192.png",
@@ -16,6 +16,6 @@
   ],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#e3e3e3",
-  "background_color": "#e3e3e3"
+  "theme_color": "#ff4081",
+  "background_color": "#263238"
 }
