@@ -1,78 +1,4 @@
-import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";const $_documentContainer=document.createElement("template");$_documentContainer.setAttribute("style","display: none;");$_documentContainer.innerHTML=`<dom-module id="app-grid-style">
-  <template>
-    <style>
-      :host {
-        /**
-         * The width for the expandible item is:
-         * ((100% - subPixelAdjustment) / columns * itemColumns - gutter
-         *
-         * - subPixelAdjustment: 0.1px (Required for IE 11)
-         * - gutter: var(--app-grid-gutter)
-         * - columns: var(--app-grid-columns)
-         * - itemColumn: var(--app-grid-expandible-item-columns)
-         */
-        --app-grid-expandible-item: {
-          -webkit-flex-basis: calc((100% - 0.1px) / var(--app-grid-columns, 1) * var(--app-grid-expandible-item-columns, 1) - var(--app-grid-gutter, 0px)) !important;
-          flex-basis: calc((100% - 0.1px) / var(--app-grid-columns, 1) * var(--app-grid-expandible-item-columns, 1) - var(--app-grid-gutter, 0px)) !important;
-          max-width: calc((100% - 0.1px) / var(--app-grid-columns, 1) * var(--app-grid-expandible-item-columns, 1) - var(--app-grid-gutter, 0px)) !important;
-        };
-      }
-
-      .app-grid {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-
-        -ms-flex-direction: row;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-
-        -ms-flex-wrap: wrap;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
-
-        padding-top: var(--app-grid-gutter, 0px);
-        padding-left: var(--app-grid-gutter, 0px);
-        box-sizing: border-box;
-      }
-
-      .app-grid > * {
-        /* Required for IE 10 */
-        -ms-flex: 1 1 100%;
-        -webkit-flex: 1;
-        flex: 1;
-
-        /* The width for an item is: (100% - subPixelAdjustment - gutter * columns) / columns */
-        -webkit-flex-basis: calc((100% - 0.1px - (var(--app-grid-gutter, 0px) * var(--app-grid-columns, 1))) / var(--app-grid-columns, 1));
-        flex-basis: calc((100% - 0.1px - (var(--app-grid-gutter, 0px) * var(--app-grid-columns, 1))) / var(--app-grid-columns, 1));
-
-        max-width: calc((100% - 0.1px - (var(--app-grid-gutter, 0px) * var(--app-grid-columns, 1))) / var(--app-grid-columns, 1));
-        margin-bottom: var(--app-grid-gutter, 0px);
-        margin-right: var(--app-grid-gutter, 0px);
-        height: var(--app-grid-item-height);
-        box-sizing: border-box;
-      }
-
-      .app-grid[has-aspect-ratio] > * {
-        position: relative;
-      }
-
-      .app-grid[has-aspect-ratio] > *::before {
-        display: block;
-        content: "";
-        padding-top: var(--app-grid-item-height, 100%);
-      }
-
-      .app-grid[has-aspect-ratio] > * > * {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
-    </style>
-  </template>
-</dom-module>`;document.head.appendChild($_documentContainer.content);Polymer({_template:html`
+import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";Polymer({_template:html`
     <style include="paper-material-styles">
       :host {
         display: inline-block;
@@ -181,11 +107,14 @@ import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";co
         .crd{
         background-color:#4f5b62;
         width:250px;
-        height:150px;        
+        height:150px;
+        padding:5px;        
 
         }
         .crd:hover{
-          box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+        -webkit-box-shadow: -1px 2px 15px 3px rgba(255,64,129,1);
+        -moz-box-shadow: -1px 2px 15px 3px rgba(255,64,129,1);
+        box-shadow: -1px 2px 15px 3px rgba(255,64,129,1);
         }
 
         .quote{
@@ -243,33 +172,33 @@ import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";co
       @media(max-width:500px){
       
         .crd{
-          width:150px;
+          width:160px;
           height:100px ;
         
       }
       .cred{
         width:80px;
         left:40%;
-        font-size:12px;
+        font-size:10px;
         }
         .quote p{
-          font-size:12px;
+          font-size:10px;
 
         }
     }
-    @media(max-width:320px){
+    @media(max-width:370px){
       .crd{
-          width:130px;
+          width:140px;
           height:80px ;
         
       }
       .cred{
         width:60px;
         left:40%;
-        font-size:10px;
+        font-size:9px;
         }
         .quote p{
-          font-size:10px;
+          font-size:9px;
 
         }
         }
