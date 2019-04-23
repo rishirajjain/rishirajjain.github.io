@@ -1,34 +1,53 @@
 import{PolymerElement,html}from"./tr-app.js";class MyView2 extends PolymerElement{static get template(){return html`
-      <style include="app-grid-style">
+      <style >
       :host {
-      --app-grid-columns:4 ;
-      --app-grid-item-height:25%;
-      --app-grid-gutter:10px;
-        }
-      h1,h4{
+        
+          }
+         h1,h4{
           font-weight:lighter;
           color:#ff4081;
-        }
-
-        app-grid{
-          width:250px;
-          height:250px;
-        }
-        .imcont{
-          background-color:white;
-          color:black;
-          height: 100%;
-          width:100%;
-        --iron-image-height: 100%;
-        --iron-image-width: 100%;
-
-        }
-        iron-image {
-        width: 400px;
-        height: 400px;
-       
-      }
-        
+          font-family: 'Quicksand', sans-serif;  
+           }
+             
+          iron-image{
+            width:400px;
+            height:250px;
+          }
+          .app{
+            display: flex;
+            overflow-x: scroll;
+           
+          }
+         
+          
+          .polaroid{
+            margin-right: 17px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+          }
+          .polaroid:hover{
+            box-shadow: 0 4px 8px 0 white;
+          }
+          .indigo{
+            background-color:white;
+            opacity:0.8;
+            color:black;        
+          }
+          paper-icon-button.pink{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 17px;
+            
+            }
+    
+            paper-icon-button.pink:hover {
+            background-color:#ff94c2;
+            border-radius: 17px;
+            }
+            .follow{
+              text-align:right; margin:0px auto 0px auto;
+            }
       </style>
       <iron-ajax 
           auto
@@ -38,36 +57,25 @@ import{PolymerElement,html}from"./tr-app.js";class MyView2 extends PolymerElemen
       </iron-ajax>
 
         <div>
-          <h1>Tracoph</h1>
+       
+        <h1>Tracoph</h1>
           <h4>Travel - Code - Photograph </h4>
-          <p>A niche I created. Sharing positive vibes through photographs &#x1F601; </p>
+          <p>Sharing positive vibes through photographs &#x1F601;.For more photos - <a href="https://www.instagram.com/tracoph/" target="_blank"><paper-icon-button src="/images/icons/insta.svg" class="pink" alt="Loading..." ></paper-icon-button></a>
+          </p>
+          
+          
+          
         </div>
 
-<!-- <paper-button on-click="toggleDialog">open</paper-button>
-
-<paper-dialog id="dialog" modal> 
-  <h2>Header</h2>
-  <iron-image  fade src="/images/tracoph/p2.jpg" ></iron-image>
-
-  <div class="buttons">
-    <paper-button dialog-dismiss>Cancel</paper-button>
-    <paper-button dialog-confirm autofocus>Accept</paper-button>
-  </div>
-</paper-dialog>
- -->
-
-
-    <!-- 
-        <div class="app-grid">
+        <div class="app">
         <template is="dom-repeat"  items="[[imdata]]">
-       
-       <div class="imcont">
-       <iron-image fade src="[[item.imloc]]"> </iron-image>
-        </div>
-       
-
+          <div id="outer">     
+            <div class="polaroid">
+              <iron-image sizing="cover" alt="Gallery Images" src="[[item.imloc]]" ></iron-image>
+            </div>
+          </div>
         </template>
-        </div>  -->
         
+           </div>
 
-    `}toggleDialog(){this.$.dialog.toggle()}}window.customElements.define("tr-tracoph",MyView2);
+    `}}window.customElements.define("tr-tracoph",MyView2);

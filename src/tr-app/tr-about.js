@@ -3,6 +3,7 @@ import{PolymerElement,html}from"./tr-app.js";class MyView1 extends PolymerElemen
       h1{
           font-weight:lighter;
           color:#ff4081;
+          font-family: 'Quicksand', sans-serif;  
         }
       </style>
 

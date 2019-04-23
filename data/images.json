@@ -1,12 +1,30 @@
 [
     {
+        "imloc":"/images/tracoph/p1.jpg"
+    },
+    {
         "imloc":"/images/tracoph/p5.jpg"
+    },
+    {
+        "imloc":"/images/tracoph/p6.jpg"
     },
     {
         "imloc":"/images/tracoph/p2.jpg"
     }, 
     {
         "imloc":"/images/tracoph/p3.jpg"
+    }, 
+    {
+        "imloc":"/images/tracoph/p7.jpg"
+    }, 
+    {
+        "imloc":"/images/tracoph/p8.jpg"
+    }, 
+    {
+        "imloc":"/images/tracoph/p9.jpg"
+    }, 
+    {
+        "imloc":"/images/tracoph/p10.jpg"
     }, 
     {
         "imloc":"/images/tracoph/p4.jpg"
