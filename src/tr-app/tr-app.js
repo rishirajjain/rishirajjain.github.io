@@ -10539,7 +10539,7 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
   </div>
 </div>
 
-<a href="https://drive.google.com/file/d/1zC33V32q_bXzq6rbywq5NuThQCpEBdnz/view?usp=sharing" target="_blank"><paper-fab src="/images/icons/dwn.svg" class="down" id="id_9" ></paper-fab></a>
+<a href="https://drive.google.com/open?id=1pf5hzBA0PVwwtc_W2TttedhRLxtVk-Ym" target="_blank"><paper-fab src="/images/icons/dwn.svg" class="down" id="id_9" ></paper-fab></a>
 
 
 
@@ -10604,10 +10604,6 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
   </div>
 </form>
 </paper-dialog>
-
-
-
-
 
     
     `}static get properties(){return{prop1:{type:String,value:"Hi, I'm Rishi"},page:{type:String,reflectToAttribute:!0,observer:"_pageChanged"},routeData:Object,subroute:Object}}static get observers(){return["_routePageChanged(routeData.page)"]}_routePageChanged(page){// Show the corresponding page according to the route.
