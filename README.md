@@ -1,4 +1,4 @@
-# rishirajjain.xyz
+# rishirajjain.com
 Personal Portfolio page
 
 
