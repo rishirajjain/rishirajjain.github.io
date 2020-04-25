@@ -195,7 +195,6 @@ import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";co
    * empty string when given a falsy value.
    */_isHidden:function(image){return image?"false":"true"},_headingChanged:function(heading){var currentHeading=this.getAttribute("heading"),currentLabel=this.getAttribute("aria-label");if("string"!==typeof currentLabel||currentLabel===currentHeading){this.setAttribute("aria-label",heading)}},_computeHeadingClass:function(image){return image?" over-image":""},_computeAnimated:function(animatedShadow){return animatedShadow}});class MyView3 extends PolymerElement{static get template(){return html$1`
       <style include="app-grid-style">
-
       :host {
       --app-grid-columns:3 ;
       --app-grid-item-height:50%;
@@ -204,33 +203,30 @@ import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";co
         h1,h4{
         font-weight:lighter;
         color:#ff4081;
-        font-family: 'Quicksand', sans-serif;  
+        font-family: 'Quicksand', sans-serif; 
         }
         .crd{
         background-color:#4f5b62;
         width:250px;
         height:150px;
         padding:5px;        
-
         }
         .crd:hover{
-        box-shadow: 0 4px 8px 0 rgba(255,64,129,1);
+        -webkit-box-shadow: -1px 2px 15px 3px rgba(255,64,129,1);
+        -moz-box-shadow: -1px 2px 15px 3px rgba(255,64,129,1);
+        box-shadow: -1px 2px 15px 3px rgba(255,64,129,1);
         }
-
         .quote{
         text-align:center;
         position: relative;
         
         }
-
         .quote p{
           font-size: 16px;
         }
-
         .app-grid{
           text-align:center;
         }
-
         .cred{
         font-size: 12px;
         text-align: justify;
@@ -240,18 +236,14 @@ import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";co
         left: 60%;
         bottom:0;
         color:#ff4081;
-
         }
        
-
         @media (max-width:780px) {
         .crd{
           width:220px;
         }
       }     
-
      
-
       @media (max-width: 640px) {
         :host {
           --app-grid-columns: 2;
@@ -265,10 +257,8 @@ import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";co
         }
         .quote p{
           font-size:12px;
-
         }
       }
-
       @media(max-width:500px){
       
         .crd{
@@ -283,7 +273,6 @@ import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";co
         }
         .quote p{
           font-size:10px;
-
         }
     }
     @media(max-width:370px){
@@ -299,7 +288,6 @@ import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";co
         }
         .quote p{
           font-size:9px;
-
         }
         }
        
@@ -310,10 +298,9 @@ import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";co
           handle-as="json"
           last-response="{{quotes}}">
       </iron-ajax>
-
       <div>
         <h1>Quotes</h1>
-        <h4>If these don't inspire you , what will?</h4>
+        <h4>Thoughts that inspire</h4>
      </div>
         
      <div class="app-grid">
@@ -330,7 +317,5 @@ import{Polymer,html$1 as html,PolymerElement,html as html$1}from"./tr-app.js";co
         </template>
   
      </div>
-
      
-
     `}}window.customElements.define("tr-quotes",MyView3);
