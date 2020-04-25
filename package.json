@@ -13,11 +13,9 @@
     "@polymer/paper-dialog": "^3.0.1",
     "@polymer/paper-fab": "^3.0.1",
     "@polymer/paper-icon-button": "^3.0.2",
-    "@polymer/paper-input": "^3.0.2",
     "@polymer/paper-tooltip": "^3.0.1",
     "@polymer/polymer": "^3.0.0",
-    "infinite-carousel-wc": "^0.4.1",
-    "paper-input": "^3.0.2"
+    "@silverlinkz/sl-gallery": "^2.3.1"
   },
   "devDependencies": {
     "@polymer/test-fixture": "^4.0.2",

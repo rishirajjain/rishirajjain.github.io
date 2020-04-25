@@ -10290,23 +10290,9 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
           border-radius:100px;
           -webkit-tap-highlight-color: transparent;
         }
+
         .navli a:hover{
           box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
-        }
-
-         .alignright{
-         margin-left: auto;
-         background-color:white;
-         color:black;
-         font-family: 'Quicksand', sans-serif;
-         text-transform: capitalize;
-         } 
-
-        
-
-        .alignright:hover{
-         background-color: #000a12;
-         color:white;
         }
         
         .card{
@@ -10316,6 +10302,7 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
         height: 85vh ;
         font-size:18px;      
         }
+
         .foo{
         background-color:#263238;
         height:80vh;
@@ -10331,18 +10318,22 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
         -moz-box-shadow: 0px -2px 20px 3px rgba(163,158,163,1);
         box-shadow: 0px -2px 20px 3px rgba(163,158,163,1);
          } 
+
         
         .pos{
         padding-top:10px;
         text-align: center;
         }
+
         .icons {
         text-align: center;
         padding-top: 15px;
         }
+
         .icons a{
         padding:30px;
         }
+
         paper-icon-button.pink{
         width: 60px;
         height: 60px;
@@ -10350,16 +10341,19 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
         border-radius: 100px;
         border:solid #ff4081;
         }
+
         paper-icon-button.pink:hover {
         background-color:#ff94c2;
         border-radius: 100px;
         }
+
         .down{
         position: fixed;
         top:80%;
         left:90%;
         z-index:1;
         }
+
         .typin h1 {
         text-align:center;
         font-weight:lighter;
@@ -10377,16 +10371,19 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
         blink-caret .5s step-end infinite;
         }
               
+
         /* The typing effect */
         @keyframes typing {
         from { width: 0 }
         to { width: 85% }
         }
+
         /* The typewriter cursor effect */
         @keyframes blink-caret {
         from, to { border-color: transparent }
         50% { border-color: #ff4081 }
         }
+
         .typin h5{
           text-align:center;
           font-weight:lighter;
@@ -10399,7 +10396,9 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
         border-radius: 50%;
         display: inline-block;
         }
+
         .tooltip{
+
         --paper-tooltip-background: #263238;
         --paper-tooltip-text-color: white;       
         }
@@ -10408,6 +10407,7 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
         font-size: 15px;
         font-family: 'Open Sans', sans-serif;
         } 
+
         #email{
         font-size:18px;
         padding:10px 10px 10px 5px;
@@ -10418,7 +10418,9 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
         margin-bottom: 50px;
         font-family: 'Open Sans', sans-serif;
         }
+
         #email:focus{ outline:none; }
+
         #textbox{
         font-size:18px;
         padding:10px 10px 10px 5px;
@@ -10432,15 +10434,18 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
         }
         
         #textbox:focus{ outline:none; }
+
         #btn{
         width:76px;
         height: 40px;
+
         font-size: 16px;
         background-color:#ff4081;
         border-radius: 2px;
         color: white;
         border: 1px solid transparent;
         }
+
 
        .buttons{
         text-align: center;
@@ -10453,14 +10458,14 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
         margin-top: 20px;
         font-size:12px;
         }
-
         @media(max-width:760px){
           .icons a{
         padding:10px;
         }
         }
 
-      @media only screen and (max-width: 600px){
+        @media only screen and (max-width: 600px){
+
         paper-icon-button.pink{
         width: 50px;
         height: 50px;
@@ -10471,6 +10476,7 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
         .navli li{
           padding:10px;
         }
+
         .down{
         left:80%;
         } 
@@ -10481,63 +10487,80 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
           font-size:14px;
         }
         }
-      @media(max-width:320px){
-        paper-icon-button.pink{
+        @media(max-width:320px){
+          paper-icon-button.pink{
         width: 40px;
         height: 40px;
         }}
+
       </style>
       
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
       </app-location>
+
       <app-route route="{{route}}" pattern="[[rootPath]]:page" data="{{routeData}}" tail="{{subroute}}">
       </app-route>
 
 <div class="cnt">
-
   <div class="card ">
 
- <div style="display: flex;margin: auto;justify-content: flex-end;"  > <div id="id_10" > <paper-button class="alignright" on-tap="openLink" disabled><span>Blog</span></paper-button></div>
-</div>
         <div class="pos" >
-        <a  href="[[rootPath]]"><iron-image src="/images/rishi.jpg" class="photo" alt="This is me!"></a> 
+        <a  href="[[rootPath]]"><iron-image src="/images/rishi.png" class="photo" alt="What I look like"></a> 
           </iron-image>
         </div>
+
+
         <div class="typin">
           <h1>[[prop1]]</h1>
           <h5>Engineer <span class="dot"></span> Developer <span class="dot"></span> Traveller </h5>
         </div>
+
     <div class="icons">
+
       <a on-tap="toggleDialog">
       <paper-icon-button src="/images/icons/email.svg" class="pink" id="id_7" alt="Loading..." ></paper-icon-button></a>
+
       <a href="https://www.github.com/rishirajjain" target="_blank"><paper-icon-button src="/images/icons/git.svg" alt="Loading..." class="pink" id="id_5"></paper-icon-button></a>
+
       <a href="https://www.linkedin.com/in/rishiraj-jain" target="_blank">   
       <paper-icon-button src="/images/icons/linkedin.svg" alt="Loading..." class="pink" id="id_6"></paper-icon-button></a>
+
       <a href="https://www.facebook.com/rishirajjain143" target="_blank" tabindex="-1"> 
       <paper-icon-button src="/images/icons/facebook.svg" alt="Loading..."  class="pink" id="id_1"></paper-icon-button></a>
+
       <a href="https://twitter.com/rishirajjain319" target="_blank"> 
       <paper-icon-button src="/images/icons/twitter.svg" alt="Loading..."  class="pink" id="id_2"></paper-icon-button></a>
+
       <a href="https://www.instagram.com/rish._/" target="_blank"> 
       <paper-icon-button src="/images/icons/instagram.svg" alt="Loading..." class="pink" id="id_4" ></paper-icon-button></a>
+
     </div>
+
   </div>
 </div>
-<a href="https://docs.google.com/document/d/1JcDdPgwZYYAt6B574EY3fc__xwqjt-Pz7LD29I_w72I/edit?usp=sharing" target="_blank"><paper-fab src="/images/icons/dwn.svg" class="down" id="id_9" ></paper-fab></a>
+
+<a href="https://drive.google.com/open?id=1pf5hzBA0PVwwtc_W2TttedhRLxtVk-Ym" target="_blank"><paper-fab src="/images/icons/dwn.svg" class="down" id="id_9" ></paper-fab></a>
+
+
+
 <div class="cnt_2">
+
        
         
   <div class="card foo">
+
       <nav class="navli">
       <div>
-         <iron-selector selected="[[page]]" attr-for-selected="name" >
-         <ul>
-         <li><a name="about" href="[[rootPath]]about">About</a></li>
-         <li><a name="tracoph" href="[[rootPath]]tracoph">Tracoph</a></li>
-         <li><a name="quotes" href="[[rootPath]]quotes">Quotes</a></li>
-         </ul>
-         </iron-selector>
+      <iron-selector selected="[[page]]" attr-for-selected="name" >
+      <ul>
+      <li><a name="about" href="[[rootPath]]about">About</a></li>
+      <li><a name="tracoph" href="[[rootPath]]tracoph">Tracoph</a></li>
+      <li><a name="quotes" href="[[rootPath]]quotes">Quotes</a></li>
+      </ul>
+      </iron-selector>
       </div>
       </nav> 
+
   
       <iron-pages selected="[[page]]" attr-for-selected="name" role="main">
             <tr-about name="about"></tr-about>
@@ -10546,12 +10569,16 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
             <tr-v404 name="v404"></tr-v404>
       </iron-pages>
       
+
   </div>
+
   
     <div class="footer">Made with &hearts; by Rishi Raj Jain<br>
       Note: All resources used for making this website are free and open source.
     </div>
 </div>
+
+
 
 <!--Tooltips -->
 <paper-tooltip for="id_1" tabindex="0" animation-delay="0" position="top" class="tooltip"><span class="span">Facebook</span></paper-tooltip>
@@ -10561,9 +10588,9 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
 <paper-tooltip for="id_6" tabindex="0" animation-delay="0" position="top" class="tooltip"><span class="span">LinkedIn</span></paper-tooltip>
 <paper-tooltip for="id_7" tabindex="0" animation-delay="0" position="top" class="tooltip"><span class="span">Email</span></paper-tooltip>
 <paper-tooltip for="id_9" tabindex="0" animation-delay="0" position="top" offset="0" class="tooltip"><span class="span">Download Resume</span></paper-tooltip>
-<paper-tooltip for="id_10" tabindex="0" animation-delay="0" position="bottom" class="tooltip"><span class="span">Coming Soon!</span></paper-tooltip>
 
 <!--Modal Form Email -->
+
 <paper-dialog id="dialog" modal>
  <form method="POST" action="https://formspree.io/rishirajjain98@gmail.com">
   <input  placeholder="Your Email" type="email" name="email" id="email" required>
@@ -10572,11 +10599,12 @@ if("entry"===type){this.updateStyles({"--paper-tooltip-delay-in":timingDelay+"ms
   <div class="buttons">
     
     <paper-button dialog-confirm style="background-color: #263238; color: white;">close</paper-button>
-    <button type="submit" id="btn" style="color: white;font-size:14px;">SEND</button>
+    <button type="submit" id="btn">Send</button>
     
   </div>
 </form>
 </paper-dialog>
+
     
     `}static get properties(){return{prop1:{type:String,value:"Hi, I'm Rishi"},page:{type:String,reflectToAttribute:!0,observer:"_pageChanged"},routeData:Object,subroute:Object}}static get observers(){return["_routePageChanged(routeData.page)"]}_routePageChanged(page){// Show the corresponding page according to the route.
 //
@@ -10586,4 +10614,4 @@ if(!page){this.page="about"}else if(-1!==["about","tracoph","quotes"].indexOf(pa
 //
 // Note: `polymer build` doesn't like string concatenation in the import
 // statement, so break it up.
-switch(page){case"about":import("./tr-about.js").then(bundle=>bundle&&bundle.$trAbout||{});break;case"tracoph":import("./tr-tracoph.js").then(bundle=>bundle&&bundle.$trTracoph||{});break;case"quotes":import("./tr-quotes.js").then(bundle=>bundle&&bundle.$trQuotes||{});break;case"v404":import("./tr-v404.js").then(bundle=>bundle&&bundle.$trV404||{});break;}}toggleDialog(){this.$.dialog.toggle()}openLink(){location="/blog.html"}}window.customElements.define("tr-app",TrApp);export{appRouteConverterBehavior as $appRouteConverterBehavior,applyShim as $applyShim$1,ApplyShim as $applyShimDefault,applyShimUtils as $applyShimUtils,arraySelector as $arraySelector,arraySplice as $arraySplice,async as $async,caseMap$1 as $caseMap,_class as $class,commonRegex as $commonRegex,commonUtils as $commonUtils,cssParse as $cssParse,customStyle as $customStyle,customStyleInterface as $customStyleInterface$1,CustomStyleInterface as $customStyleInterfaceDefault,debounce as $debounce,dirMixin as $dirMixin,documentWait$1 as $documentWait,documentWait as $documentWaitDefault,domBind as $domBind,domIf as $domIf,domModule as $domModule,domRepeat as $domRepeat,elementMixin as $elementMixin,flattenedNodesObserver as $flattenedNodesObserver,flush$2 as $flush,gestureEventListeners as $gestureEventListeners,gestures$0 as $gestures,htmlTag as $htmlTag,ironA11yKeysBehavior as $ironA11yKeysBehavior,ironButtonState as $ironButtonState,ironControlState as $ironControlState,ironFitBehavior as $ironFitBehavior,ironFocusablesHelper as $ironFocusablesHelper,ironMeta as $ironMeta,ironMultiSelectable as $ironMultiSelectable,ironOverlayBehavior as $ironOverlayBehavior,ironOverlayManager as $ironOverlayManager,ironResizableBehavior as $ironResizableBehavior,ironScrollManager as $ironScrollManager,ironSelectable as $ironSelectable,ironSelection as $ironSelection,legacyElementMixin as $legacyElementMixin,mixin as $mixin,mutableData as $mutableData,mutableDataBehavior as $mutableDataBehavior,neonAnimatableBehavior as $neonAnimatableBehavior,neonAnimationRunnerBehavior as $neonAnimationRunnerBehavior,paperButtonBehavior as $paperButtonBehavior,paperDialogBehavior as $paperDialogBehavior,paperInkyFocusBehavior as $paperInkyFocusBehavior,paperRippleBehavior as $paperRippleBehavior,path as $path,polymer_dom as $polymerDom,polymerElement as $polymerElement,polymerFn as $polymerFn,polymerLegacy as $polymerLegacy,propertiesChanged as $propertiesChanged,propertiesMixin as $propertiesMixin,propertyAccessors as $propertyAccessors,propertyEffects as $propertyEffects,renderStatus as $renderStatus,resolveUrl$1 as $resolveUrl,settings as $settings,styleGather as $styleGather,styleSettings as $styleSettings,styleUtil as $styleUtil,templateMap$1 as $templateMap,templateMap as $templateMapDefault,templateStamp as $templateStamp,templatize$1 as $templatize,templatizerBehavior as $templatizerBehavior,unscopedStyleHandler as $unscopedStyleHandler,ANIMATION_MATCH,AppRouteConverterBehavior,ArraySelector,ArraySelectorMixin,BRACKETED,Base,Class,CustomStyle,CustomStyleInterfaceInterface,CustomStyleProvider,Debouncer,DirMixin,DomApi,DomBind,DomIf,DomModule,DomRepeat,ElementMixin,FlattenedNodesObserver,GestureEventListeners,HOST_PREFIX,HOST_SUFFIX,IS_VAR,IronA11yKeysBehavior,IronButtonState,IronButtonStateImpl,IronControlState,IronFitBehavior,IronFocusablesHelper,IronMeta,IronMultiSelectableBehavior,IronMultiSelectableBehaviorImpl,IronOverlayBehavior,IronOverlayBehaviorImpl,IronOverlayManager,IronOverlayManagerClass,IronResizableBehavior,IronSelectableBehavior,IronSelection,LegacyElementMixin,MEDIA_MATCH,MIXIN_MATCH,MutableData,MutableDataBehavior,NeonAnimatableBehavior,NeonAnimationRunnerBehavior,NeonAnimationRunnerBehaviorImpl,OptionalMutableData,OptionalMutableDataBehavior,PaperButtonBehavior,PaperButtonBehaviorImpl,PaperDialogBehavior,PaperDialogBehaviorImpl,PaperInkyFocusBehavior,PaperInkyFocusBehaviorImpl,PaperRippleBehavior,Polymer,Polymer as Polymer$1,PolymerElement,PropertiesChanged,PropertiesMixin,PropertyAccessors,PropertyEffects,StyleNode,TemplateInstanceBase,TemplateStamp,Templatizer,VAR_ASSIGN,VAR_CONSUMED,_boundScrollHandler,_composedTreeContains,_getScrollInfo,_getScrollableNodes,_getScrollingNode,_hasCachedLockedElement,_hasCachedUnlockedElement,_lockScrollInteractions,_lockedElementCache,_lockingElements,_scrollInteractionHandler,_shouldPreventScrolling,_unlockScrollInteractions,_unlockedElementCache,add,enqueueDebouncer as addDebouncer,addListener,afterNextRender,animationFrame,applyCss,applyStyle,applyStylePlaceHolder,beforeNextRender,calculateSplices,camelToDashCase,createScopeStyle,cssFromModule,cssFromModuleImports,cssFromModules,cssFromTemplate,currentLockingElement,dashToCamelCase,dedupingMixin,deepTargetFind,detectMixin,dom,dumpRegistrations,elementIsScrollLocked,elementsAreInvalid,enqueueDebouncer,findOriginalTarget,flush$1 as flush,flush$1,flush as flush$2,forEachRule,gatherStyleText,gestures,get,getComputedStyleValue,getCssBuildType,getIsExtends,html,html as html$1,html as html$2,htmlLiteral,idlePeriod,instanceCount,invalidate,invalidateTemplate,isAncestor,isDeep,isDescendant,isKeyframesSelector,isPath,isTargetedBuild,isUnscopedStyle,isValid,isValidating,matches,matchesSelector,microTask,mixinBehaviors,modelForElement,nativeCssVariables,nativeShadow,normalize,parse,passiveTouchGestures,pathFromUrl,prevent,processUnscopedStyle,processVariableAndFallback,pushScrollLock,recognizers,register,register$1,registrations,remove,removeCustomPropAssignment,removeListener,removeScrollLock,resetMouseCanceller,resolveCss,resolveUrl,root,rootPath,rulesForStyle,sanitizeDOMValue,scopingAttribute,set,setElementClassRaw,setPassiveTouchGestures,setRootPath,setSanitizeDOMValue,setTouchAction,split,startValidating,startValidatingTemplate,stringify,stylesFromModule,stylesFromModuleImports,stylesFromModules,stylesFromTemplate,templateIsValid,templateIsValidating,templatize,timeOut,toCssText,translate,types,updateNativeProperties,updateStyles,useNativeCSSProperties,useNativeCustomElements,useShadow};
+switch(page){case"about":import("./tr-about.js").then(bundle=>bundle&&bundle.$trAbout||{});break;case"tracoph":import("./tr-tracoph.js").then(bundle=>bundle&&bundle.$trTracoph||{});break;case"quotes":import("./tr-quotes.js").then(bundle=>bundle&&bundle.$trQuotes||{});break;case"v404":import("./tr-v404.js").then(bundle=>bundle&&bundle.$trV404||{});break;}}toggleDialog(){this.$.dialog.toggle()}}window.customElements.define("tr-app",TrApp);export{appRouteConverterBehavior as $appRouteConverterBehavior,applyShim as $applyShim$1,ApplyShim as $applyShimDefault,applyShimUtils as $applyShimUtils,arraySelector as $arraySelector,arraySplice as $arraySplice,async as $async,caseMap$1 as $caseMap,_class as $class,commonRegex as $commonRegex,commonUtils as $commonUtils,cssParse as $cssParse,customStyle as $customStyle,customStyleInterface as $customStyleInterface$1,CustomStyleInterface as $customStyleInterfaceDefault,debounce as $debounce,dirMixin as $dirMixin,documentWait$1 as $documentWait,documentWait as $documentWaitDefault,domBind as $domBind,domIf as $domIf,domModule as $domModule,domRepeat as $domRepeat,elementMixin as $elementMixin,flattenedNodesObserver as $flattenedNodesObserver,flush$2 as $flush,gestureEventListeners as $gestureEventListeners,gestures$0 as $gestures,htmlTag as $htmlTag,ironA11yKeysBehavior as $ironA11yKeysBehavior,ironButtonState as $ironButtonState,ironControlState as $ironControlState,ironFitBehavior as $ironFitBehavior,ironFocusablesHelper as $ironFocusablesHelper,ironMeta as $ironMeta,ironMultiSelectable as $ironMultiSelectable,ironOverlayBehavior as $ironOverlayBehavior,ironOverlayManager as $ironOverlayManager,ironResizableBehavior as $ironResizableBehavior,ironScrollManager as $ironScrollManager,ironSelectable as $ironSelectable,ironSelection as $ironSelection,legacyElementMixin as $legacyElementMixin,mixin as $mixin,mutableData as $mutableData,mutableDataBehavior as $mutableDataBehavior,neonAnimatableBehavior as $neonAnimatableBehavior,neonAnimationRunnerBehavior as $neonAnimationRunnerBehavior,paperButtonBehavior as $paperButtonBehavior,paperDialogBehavior as $paperDialogBehavior,paperInkyFocusBehavior as $paperInkyFocusBehavior,paperRippleBehavior as $paperRippleBehavior,path as $path,polymer_dom as $polymerDom,polymerElement as $polymerElement,polymerFn as $polymerFn,polymerLegacy as $polymerLegacy,propertiesChanged as $propertiesChanged,propertiesMixin as $propertiesMixin,propertyAccessors as $propertyAccessors,propertyEffects as $propertyEffects,renderStatus as $renderStatus,resolveUrl$1 as $resolveUrl,settings as $settings,styleGather as $styleGather,styleSettings as $styleSettings,styleUtil as $styleUtil,templateMap$1 as $templateMap,templateMap as $templateMapDefault,templateStamp as $templateStamp,templatize$1 as $templatize,templatizerBehavior as $templatizerBehavior,unscopedStyleHandler as $unscopedStyleHandler,ANIMATION_MATCH,AppRouteConverterBehavior,ArraySelector,ArraySelectorMixin,BRACKETED,Base,Class,CustomStyle,CustomStyleInterfaceInterface,CustomStyleProvider,Debouncer,DirMixin,DomApi,DomBind,DomIf,DomModule,DomRepeat,ElementMixin,FlattenedNodesObserver,GestureEventListeners,HOST_PREFIX,HOST_SUFFIX,IS_VAR,IronA11yKeysBehavior,IronButtonState,IronButtonStateImpl,IronControlState,IronFitBehavior,IronFocusablesHelper,IronMeta,IronMultiSelectableBehavior,IronMultiSelectableBehaviorImpl,IronOverlayBehavior,IronOverlayBehaviorImpl,IronOverlayManager,IronOverlayManagerClass,IronResizableBehavior,IronSelectableBehavior,IronSelection,LegacyElementMixin,MEDIA_MATCH,MIXIN_MATCH,MutableData,MutableDataBehavior,NeonAnimatableBehavior,NeonAnimationRunnerBehavior,NeonAnimationRunnerBehaviorImpl,OptionalMutableData,OptionalMutableDataBehavior,PaperButtonBehavior,PaperButtonBehaviorImpl,PaperDialogBehavior,PaperDialogBehaviorImpl,PaperInkyFocusBehavior,PaperInkyFocusBehaviorImpl,PaperRippleBehavior,Polymer,Polymer as Polymer$1,PolymerElement,PropertiesChanged,PropertiesMixin,PropertyAccessors,PropertyEffects,StyleNode,TemplateInstanceBase,TemplateStamp,Templatizer,VAR_ASSIGN,VAR_CONSUMED,_boundScrollHandler,_composedTreeContains,_getScrollInfo,_getScrollableNodes,_getScrollingNode,_hasCachedLockedElement,_hasCachedUnlockedElement,_lockScrollInteractions,_lockedElementCache,_lockingElements,_scrollInteractionHandler,_shouldPreventScrolling,_unlockScrollInteractions,_unlockedElementCache,add,enqueueDebouncer as addDebouncer,addListener,afterNextRender,animationFrame,applyCss,applyStyle,applyStylePlaceHolder,beforeNextRender,calculateSplices,camelToDashCase,createScopeStyle,cssFromModule,cssFromModuleImports,cssFromModules,cssFromTemplate,currentLockingElement,dashToCamelCase,dedupingMixin,deepTargetFind,detectMixin,dom,dumpRegistrations,elementIsScrollLocked,elementsAreInvalid,enqueueDebouncer,findOriginalTarget,flush$1 as flush,flush$1,flush as flush$2,forEachRule,gatherStyleText,gestures,get,getComputedStyleValue,getCssBuildType,getIsExtends,html,html as html$1,html as html$2,htmlLiteral,idlePeriod,instanceCount,invalidate,invalidateTemplate,isAncestor,isDeep,isDescendant,isKeyframesSelector,isPath,isTargetedBuild,isUnscopedStyle,isValid,isValidating,matches,matchesSelector,microTask,mixinBehaviors,modelForElement,nativeCssVariables,nativeShadow,normalize,parse,passiveTouchGestures,pathFromUrl,prevent,processUnscopedStyle,processVariableAndFallback,pushScrollLock,recognizers,register,register$1,registrations,remove,removeCustomPropAssignment,removeListener,removeScrollLock,resetMouseCanceller,resolveCss,resolveUrl,root,rootPath,rulesForStyle,sanitizeDOMValue,scopingAttribute,set,setElementClassRaw,setPassiveTouchGestures,setRootPath,setSanitizeDOMValue,setTouchAction,split,startValidating,startValidatingTemplate,stringify,stylesFromModule,stylesFromModuleImports,stylesFromModules,stylesFromTemplate,templateIsValid,templateIsValidating,templatize,timeOut,toCssText,translate,types,updateNativeProperties,updateStyles,useNativeCSSProperties,useNativeCustomElements,useShadow};
