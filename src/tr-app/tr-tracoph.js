@@ -16,9 +16,12 @@ import{PolymerElement,html}from"./tr-app.js";class MyView2 extends PolymerElemen
           .app{
             display: flex;
             overflow-x: scroll;
-           
+            -ms-overflow-style: none;
+          
           }
-         
+         .app::-webkit-scrollbar {
+          display: none;
+        }
           
           .polaroid{
             margin-right: 17px;
@@ -48,6 +51,9 @@ import{PolymerElement,html}from"./tr-app.js";class MyView2 extends PolymerElemen
             .follow{
               text-align:right; margin:0px auto 0px auto;
             }
+            .slider{
+              text-align:center;
+            }
       </style>
       <iron-ajax 
           auto
@@ -60,22 +66,27 @@ import{PolymerElement,html}from"./tr-app.js";class MyView2 extends PolymerElemen
        
         <h1>Tracoph</h1>
           <h4>Travel - Code - Photograph </h4>
-          <p>Sharing positive vibes through photographs &#x1F601;.For more photos - <a href="https://www.instagram.com/tracoph/" target="_blank"><paper-icon-button src="/images/icons/insta.svg" class="pink" alt="Loading..." ></paper-icon-button></a>
+          <p>Sharing positive vibes through photographs &#x1F601;.For more photos click on this &#x1F449; <a href="https://www.instagram.com/tracoph/" target="_blank"><paper-icon-button src="/images/icons/insta.svg" class="pink" alt="Loading..." ></paper-icon-button></a>
           </p>
           
           
           
         </div>
-
-        <div class="app">
+        
+        <div class="app" id="app">
         <template is="dom-repeat"  items="[[imdata]]">
           <div id="outer">     
             <div class="polaroid">
-              <iron-image sizing="cover" alt="Gallery Images" src="[[item.imloc]]" ></iron-image>
+             <iron-image sizing="cover" alt="Gallery Images" src="[[item.imloc]]" ></iron-image>
             </div>
           </div>
         </template>
         
            </div>
+           
+        <div class="slider">
+        <paper-button on-tap="prev" > < </paper-button>   
+        <paper-button on-tap="next" > > </paper-button> 
+        </div>
 
-    `}}window.customElements.define("tr-tracoph",MyView2);
+    `}prev(){this.$.app.scrollBy({left:-200,behavior:"smooth"})}next(){this.$.app.scrollBy({left:200,behavior:"smooth"})}}window.customElements.define("tr-tracoph",MyView2);
