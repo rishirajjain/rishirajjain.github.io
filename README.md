@@ -1,4 +1,4 @@
-# rishirajjain.github.io (Now depreciated visit rishirajjain.com for latest version of my portfolio)
+# rishirajjain.github.io (Now depreciated, visit rishirajjain.com for latest version of my portfolio)
 Personal Portfolio page
 
 
